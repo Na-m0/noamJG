@@ -1,0 +1,30 @@
+.button_first {
+    z-index: 1;
+    position: relative;
+    transition: all 250ms;
+   }
+  
+  .button_first::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 11px;
+    background-color: #444444;
+    z-index: -1;
+    transition: all 250ms
+   }
+   
+  .button_first:hover {
+    color: #e8e8e8;
+   }
+   
+  .button_first:hover::before {
+    width: 100%;
+   }
+  
+   h1 {
+    font-size: 80px;
+   }

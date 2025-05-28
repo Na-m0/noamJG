@@ -1,0 +1,7 @@
+@media (max-width: 1160px) {
+    .footer-responsive {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        gap: 2rem;
+    }
+}
