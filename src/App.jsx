@@ -12,6 +12,7 @@ import Projects from './pages/Projects/Projets';
 import Contact from './pages/Contact';
 import DetailProjet from './components/Projet/DetailProjet';
 import Footer from './pages/Footer/Footer';
+import ScrollToTop from './pages/Transition/ScrollToTop';
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
   return (
     <TransitionProvider>
       {showNavBar && <NavBar />}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<FirstPage />} />
         <Route path="/home" element={<Home />} />
