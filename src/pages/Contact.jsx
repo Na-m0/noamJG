@@ -18,8 +18,8 @@ const Contact = () => {
           <h2 className="text-2xl font-semibold">Mes informations</h2>
           <p><strong>Nom :</strong> Joly-Girods</p>
           <p><strong>Prénom :</strong> Noam</p>
-          <p><strong>Email :</strong> <a className="underline hover:text-[#888]" href="mailto:noam@example.com">noam@example.com</a></p>
-          <p><strong>Téléphone :</strong> <a className="underline hover:text-[#888]" href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+          <p><strong>Email :</strong> <a className="underline hover:text-[#888]" href="mailto:noam@example.com">noamjoly2812@gmail.com</a></p>
+          <p><strong>Téléphone :</strong> <a className="underline hover:text-[#888]" href="tel:+33613593945">+33 6 13 59 39 45</a></p>
         </div>
 
         {/* Formulaire */}

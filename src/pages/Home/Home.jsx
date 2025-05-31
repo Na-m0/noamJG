@@ -5,6 +5,7 @@ import Projets from "./Projets/Projets";
 import Competences from "./Competences/Competences";
 import bg_competences from "../../assets/fond_comp.png";
 import fond_bienvenue from "../../assets/fond_haut.png";
+import AnimatedBackground from "./AnimatedBackground";
 
 const Home = () => {
   const aProposRef = useRef(null);
@@ -18,12 +19,11 @@ const Home = () => {
       {/* Section Bienvenue */}
       <div
         className="relative h-screen overflow-hidden flex items-center justify-center text-[#444444]"
-        style={{
-          backgroundImage: `url(${fond_bienvenue})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
+        {/* SVG animé en fond */}
+        <AnimatedBackground />
+        
+        {/* Contenu texte */}
         <div className="z-10 text-center px-4 mt-20">
           <h1 className="text-5xl md:text-7xl font-bold">Bienvenue</h1>
           <p className="mt-4 text-lg md:text-2xl opacity-80">
