@@ -1,20 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../../data/data.json";
+import { useTranslation } from "react-i18next";
 
 const Projets = () => {
-    const projects = data;
+    const { t } = useTranslation();
+
+    const projects = t('projects', { returnObjects: true });
 
     const getLatestYear = (dateStr) => {
+        if (!dateStr || typeof dateStr !== 'string') return 0;
         const years = dateStr.match(/\d{4}/g);
         if (!years) return 0;
         return Math.max(...years.map(Number));
     };
+    
 
     const sortedProjects = projects.sort((a, b) => getLatestYear(b.date) - getLatestYear(a.date));
 
     return (
-        <div className="p-[10%] pt-20 pb-20">
+        <div className="p-[10%] pt-12 pb-20">
             <div className="flex flex-wrap">
             {sortedProjects.slice(0, 2).map((project, index) => (
                 <div key={index} className="w-full md:w-[48%] max-w-[570px] h-[400px] mx-auto relative mb-20 flex flex-col">
@@ -45,7 +49,7 @@ const Projets = () => {
                                 to={`/projects/${project.id}`}
                                 className="bg-[#EDE8FF] px-4 py-2 text-sm rounded-[0.5rem] button_first hover:bg-[#d4ccff] transition"
                             >
-                                Voir plus →
+                                {t('voir_plus')} →
                             </Link>
                         </div>
                     </div>
@@ -53,7 +57,7 @@ const Projets = () => {
             ))}
             </div>
             <div className="flex justify-center">
-                <a href="/projects" className="bg-[#EDE8FF] px-12 py-2 rounded-[0.5rem] button_first">Voir mes projets</a>
+                <Link to="/projects" className="bg-[#EDE8FF] px-12 py-2 rounded-[0.5rem] button_first">{t('voir_mes_projets')}</Link>
             </div>
         </div>
     );

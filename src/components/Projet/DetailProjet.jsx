@@ -1,15 +1,21 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import data from "../../data/data.json";
 import { IoGlobeOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const DetailProjet = () => {
+    const { t } = useTranslation();
     const { id } = useParams();
-    const project = data.find((proj) => proj.id === id);
+
+    // Récupérer la liste des projets traduits depuis fr.json
+    const projects = t("projects", { returnObjects: true });
+
+    // Trouver le projet qui correspond à l'id dans l'URL
+    const project = projects.find((proj) => proj.id === id);
 
     if (!project) {
-        return <div className="p-10">Projet non trouvé</div>;
+        return <div>Projet non trouvé</div>;
     }
 
     return (
@@ -79,7 +85,7 @@ const DetailProjet = () => {
             {project.context?.length > 0 && (
               <div className="mt-12 space-y-8">
                 <div className="inline-block mb-12">
-                  <span className="text-[28px] font-semibold uppercase block">Contexte</span>
+                  <span className="text-[28px] font-semibold uppercase block">{t('context')}</span>
                   <div className="bg-[#EDE8FF] h-[10px] rounded-[2px] w-full"></div>
                 </div>
                 {project.context.map((ctx, index) => (
@@ -99,7 +105,7 @@ const DetailProjet = () => {
             {project.competence_acquise?.length > 0 && (
               <div className="mt-20 space-y-8">
                 <div className="inline-block mb-12">
-                  <span className="text-[28px] font-semibold uppercase block">Compétences acquises</span>
+                  <span className="text-[28px] font-semibold uppercase block">{t('competence_acquise')}</span>
                   <div className="bg-[#EDE8FF] h-[10px] rounded-[2px] w-full"></div>
                 </div>
                 {project.competence_acquise.map((ctx, index) => (
@@ -121,7 +127,7 @@ const DetailProjet = () => {
             {project.collaborateurs?.length > 0 && (
               <div className="mt-20">
                 <div className="inline-block mb-12">
-                  <span className="text-[28px] font-semibold uppercase block">Collaborateurs</span>
+                  <span className="text-[28px] font-semibold uppercase block">{t('collaborateurs_title')}</span>
                   <div className="bg-[#EDE8FF] h-[10px] rounded-[2px] w-full"></div>
                 </div>                
                 <div className="flex flex-wrap gap-4 text-center">
@@ -150,7 +156,7 @@ const DetailProjet = () => {
                     to="/projects"
                     className="text-[#7b61ff] hover:underline"
                 >
-                    ← Retour aux projets
+                    ← {t('Retour')}
                 </Link>
             </div>
         </div>

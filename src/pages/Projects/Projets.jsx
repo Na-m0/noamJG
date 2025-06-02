@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../../data/data.json";
+import { useTranslation } from "react-i18next";
 
 const Projets = () => {
+    const { t } = useTranslation();
     const [selectedFilter, setSelectedFilter] = useState("Tous");
 
-    const projects = data;
-    const filters = ["Tous", "Web", "Mobile", "Autre"];
-
+    const projects = t('projects', { returnObjects: true });
+    const filterKeys = Object.keys(t('project_filter', { returnObjects: true }));
+    const filters = filterKeys.map(key => ({
+      key,
+      label: t(`project_filter.${key}`)
+    }));
+    
     const getYearForSort = (dateStr) => {
         if (dateStr.includes("-")) {
             const parts = dateStr.split("-");
@@ -18,30 +23,31 @@ const Projets = () => {
 
     const filteredProjects = (selectedFilter === "Tous"
         ? projects
-        : projects.filter((project) => project.type === selectedFilter)
+        : projects.filter(project => project.type === selectedFilter)
     ).sort((a, b) => getYearForSort(b.date) - getYearForSort(a.date));
 
     return (
         <div className="p-[10%] pt-28 pb-20">
             <div className="home-parent mb-20">
-                <div className="home">Projets</div>
-                <div className="home1">Projets</div>
+                <div className="home">{t('project_title')}</div>
+                <div className="home1">{t('project_title')}</div>
                 <div className="bg-[#EDE8FF] w-[50%] h-[10px] rounded-[2px]"></div>
             </div>
             <div className="flex gap-2 flex-wrap mb-10">
-                {filters.map((filter) => (
-                    <button
-                        key={filter}
-                        onClick={() => setSelectedFilter(filter)}
-                        className={`px-4 py-1 rounded-[0.5rem] transition ${
-                            selectedFilter === filter
-                                ? "bg-[#EDE8FF]"
-                                : "bg-transparent border border-[#D9D9D9] hover:bg-[#d4ccff]"
-                        }`}
-                    >
-                        {filter}
-                    </button>
-                ))}
+            {filters.map(({ key, label }) => (
+                <button
+                    key={key}
+                    onClick={() => setSelectedFilter(key)}
+                    className={`px-4 py-1 rounded-[0.5rem] transition ${
+                        selectedFilter === key
+                            ? "bg-[#EDE8FF]"
+                            : "bg-transparent border border-[#D9D9D9] hover:bg-[#d4ccff]"
+                    }`}
+                >
+                    {label}
+                </button>
+            ))}
+
             </div>
 
             <div className="flex flex-wrap justify-center gap-y-10">
@@ -82,7 +88,7 @@ const Projets = () => {
                                     to={`/projects/${project.id}`}
                                     className="bg-[#EDE8FF] px-4 py-2 text-sm rounded-[0.5rem] button_first hover:bg-[#d4ccff] transition"
                                 >
-                                    Voir plus →
+                                    {t('voir_plus')} →
                                 </Link>
                             </div>
                         </div>

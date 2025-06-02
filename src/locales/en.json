@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+
+
+
+  "welcome": "Welcome",
+  "discover": "Discover all my work in computer science development",
+
+
+
+
+
+
+  "about_title": "About",
+  "about": {
+    "about": "About",
+    "title": "Who is Noam Joly-Girods?",
+    "paragraphs": [
+      "Noam is still a young computer science student, capable of great things thanks to his extraordinary adaptability and very complete team spirit.",
+      "He knows when to work and when to have fun.",
+      "He has a good level in computer development and sincerely wishes to create the most beautiful and functional applications.",
+      "All these points make him so remarkable haha..."
+    ],
+    "buttonText": "Learn more"
+  },
+
+
+
+
+
+  "competence_title": "Competences",
+  "front": "Front-end",
+  "back": "Back-end",
+  "lang": "Versatile language",
+  "outils": "Tools & others",
+
+  "competences": [
+    {
+      "title": "Front-end",
+      "items": [
+        { "name": "React", "to": "https://reactjs.org/" },
+        { "name": "Vue.js", "to": "https://vuejs.org/" },
+        { "name": "HTML5", "to": "https://developer.mozilla.org/fr/docs/Web/HTML" },
+        { "name": "CSS3", "to": "https://developer.mozilla.org/fr/docs/Web/CSS" },
+        { "name": "JavaScript", "to": "https://developer.mozilla.org/fr/docs/Web/JavaScript" }
+      ]
+    },
+    {
+      "title": "Back-end",
+      "items": [
+        { "name": "Node.js", "to": "https://nodejs.org/" },
+        { "name": "Prisma", "to": "https://www.prisma.io/" },
+        { "name": "MySQL", "to": "https://www.mysql.com/" },
+        { "name": "PostgreSQL", "to": "https://www.postgresql.org/" },
+        { "name": "MongoDB", "to": "https://www.mongodb.com/" }
+      ]
+    },
+    {
+      "title": "Versatile language",
+      "items": [
+        { "name": "Python", "to": "https://www.python.org/" },
+        { "name": "Java", "to": "https://www.java.com/" },
+        { "name": "Swift", "to": "https://developer.apple.com/swift/" },
+        { "name": "Kotlin", "to": "https://kotlinlang.org/" },
+        { "name": "PHP", "to": "https://www.php.net/" }
+      ]
+    },
+    {
+      "title": "Tools & others",
+      "items": [
+        { "name": "GitHub", "to": "https://github.com/" },
+        { "name": "Trello", "to": "https://trello.com/" },
+        { "name": "Figma", "to": "https://figma.com/" },
+        { "name": "Docker", "to": "https://www.docker.com/" },
+        { "name": "Postman", "to": "https://www.postman.com/" },
+        { "name": "Spring boot", "to": "https://spring.io/projects/spring-boot" }
+      ]
+    }
+  ],
+
+
+
+
+
+
+
+  "context": "Context",
+  "competence_acquise": "Skills acquired",  
+  "collaborateurs_title": "Collaborators",
+  "Retour": "Back to projects",
+
+  "project_title": "Projects",
+  "projects": [
+    {
+      "id": "gestion-demandes",
+      "title": "IT Request Management",
+      "date": "2024",
+      "description": "Web application for IT request management used for budget planning of the city of Montbéliard. Developed during my second-year internship.",
+      "image": "../images/project2.png",
+      "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
+      "link": "",
+      "github": "",
+      "type": "Web",
+      "context": [
+        {
+          "text": "",
+          "image": ""
+        }
+      ],
+      "competence_acquise": [
+        {
+          "title": "",
+          "description": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "balonu",
+      "title": "Balonu",
+      "date": "2023-2024",
+      "description": "Website to sell hot-air balloon rides during an event, using multiple user roles like provider and admin.",
+      "image": "../images/project1.png",
+      "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
+      "link": "https://balonu.vercel.app/",
+      "github": "",
+      "type": "Web",
+      "collaborateurs": [
+        { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" },
+        { "name": "Robin Cassard", "github": "https://github.com/nexiath" },
+        { "name": "Sefa Tas", "github": "https://github.com/sefats" }
+      ]
+    },
+    {
+      "id": "quoridor",
+      "title": "Quoridor",
+      "date": "2023",
+      "description": "Board game Quoridor in graphical and console versions, built from a library provided without documentation.",
+      "image": "../images/project3.png",
+      "technologies": ["Java", "JavaFX"],
+      "link": "",
+      "github": "",
+      "type": "Autre",
+      "collaborators": [
+        { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" },
+        { "name": "Robin Cassard", "github": "https://github.com/nexiath" },
+        { "name": "Sefa Tas", "github": "https://github.com/sefats" }
+      ]
+    },
+    {
+      "id": "site-vente-clés",
+      "title": "USB Key Sales Website",
+      "date": "2022",
+      "description": "Website to sell USB keys during an event, using multiple user roles like provider and admin.",
+      "image": "../images/project4.png",
+      "technologies": ["Flask", "Python", "MySQL"],
+      "link": "",
+      "github": "",
+      "type": "Web",
+      "collaborators": [
+        { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" }
+      ]
+    },
+    {
+      "id": "about-dailymotion",
+      "title": "About Dailymotion",
+      "date": "2021",
+      "description": "Website to learn about the history of Dailymotion.",
+      "image": "../images/project5.png",
+      "technologies": ["PHP", "Laravel", "MySQL"],
+      "link": "https://sae-grp19.github.io/dailymotion/",
+      "github": "https://github.com/sae-grp19/sae-grp19.github.io",
+      "type": "Web",
+      "collaborators": [
+        { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" }
+      ]
+    },
+    {
+      "id": "letterboxd",
+      "title": "Letterboxd",
+      "date": "2024",
+      "description": "Website working like a simplified version of Letterboxd. Users can view a list of movies, mark them as watched, and add reviews.",
+      "image": "../images/project6.png",
+      "technologies": ["PHP", "Laravel", "MySQL"],
+      "link": "",
+      "github": "",
+      "type": "Web",
+      "collaborators": [
+        { "name": "Sefa Tas", "github": "https://github.com/sefats" }
+      ]
+    },
+    {
+      "id": "popguess",
+      "title": "PopGuess",
+      "date": "2024",
+      "description": "Android application to play PopGuess, a game where you guess pop culture characters from scrambled letters of their names.",
+      "image": "../images/project7.png",
+      "technologies": ["Kotlin", "Android Studio"],
+      "link": "",
+      "github": "",
+      "type": "Mobile"
+    },
+    {
+      "id": "chat-application",
+      "title": "Chat application",
+      "date": "2024",
+      "description": "Application allowing real-time chatting with people. Users can register, log in, and communicate.",
+      "image": "../images/project8.png",
+      "technologies": ["Node.js", "Socket.io", "Express.js", "MongoDB"],
+      "link": "",
+      "github": "",
+      "type": "Web"
+    }
+  ],
+  "voir_mes_projets": "See my projects",
+  "voir_plus": "See more",
+  "project_filter": {
+    "Tous": "All",
+    "Web": "Web",
+    "Mobile": "Mobile",
+    "Autre": "Other"
+  },
+
+
+
+  "footer": {
+    "navigation": "Navigation",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "Me_contacter": "Contact me",
+    "cv": "See my CV",
+    "all_rights_reserved": "All rights reserved"
+  },
+
+
+  "about_intro": {
+    "p1": "<0>Student in third year of BUT computer science</0>, I invest in the development of <1>web applications</1> and <2>mobile applications</2> with the desire to create concrete and useful solutions.",
+    "p2": "My journey has led me to explore different aspects of <0>development</0>, from <1>programming</1> to <2>database management</2>, passing by <3>team work</3> on collaborative projects. These experiences have allowed me to develop an <4>organization sense</4>, <5>rigor</5> and a <6>ability to adapt</6> to the challenges encountered. I particularly enjoy learning new technologies and implementing them to solve real problems. Whether in autonomy or within a team, I always strive to evolve while contributing usefully. My goal is to continue to progress in a field where each project can have a real impact."
+  },
+  "about_education_title": "My formations",
+  "about_education": [
+    {
+      "period": "September 2022 - June 2025",
+      "degree": "BUT Computer Science — IUT Nord Franche-Comté",
+      "location": "Belfort",
+      "description": "Formation in computer science with specialization in :",
+      "specializations": [
+        "Web development",
+        "Database management",
+        "Object-oriented programming",
+        "Software architecture"
+      ]
+    }
+  ],
+  "about_experience_title": "My experiences",
+  "about_experience": [
+    {
+      "period": "March - May 2025",
+      "position": "Full stack web development internship — Association ASPORTA",
+      "location": "Dole",
+      "description": "Development of two full stack websites",
+      "links": [
+        { "label": "Association ASPORTA website", "url": "https://asporta.org/" },
+        { "label": "TSATGD tennis club website", "url": "https://tsatgd.fr/" }
+      ]
+    },
+    {
+      "period": "April - June 2024",
+      "position": "Web application development internship — Montbéliard city hall",
+      "location": "Montbéliard",
+      "description": "Development of a web application for managing IT requests for the city of Montbéliard",
+      "link": { "label": "See more →", "url": "https://noamjg-portfolio.vercel.app/" }
+    }
+  ],
+
+
+  "contact": {
+    "title": "My information",
+    "nom": "Name",
+    "prenom": "First name",
+    "tel": "Phone",
+    "message": "Send me a message",
+    "Votre_message": "Your message",
+    "envoyer": "Send"
+  }
+
+
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Competences.css";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import node from "../../../assets/icons/node.png"
 import react from "../../../assets/icons/react.png"
 import vue from "../../../assets/icons/vue.png"
@@ -21,64 +23,47 @@ import figma from "../../../assets/icons/figma.png"
 import docker from "../../../assets/icons/docker.png"
 import postman from "../../../assets/icons/postman.png"
 import springboot from "../../../assets/icons/springboot.png"
-import { Link } from "react-router-dom";
-
-const competencesData = [
-  {
-    title: "Développement Frontend",
-    items: [
-      { name: "React", icon: react, to: "https://reactjs.org/" },
-      { name: "Vue.js", icon: vue, to: "https://vuejs.org/" },
-      { name: "HTML5", icon: html, to: "https://developer.mozilla.org/fr/docs/Web/HTML" },
-      { name: "CSS3", icon: css, to: "https://developer.mozilla.org/fr/docs/Web/CSS" },
-      { name: "JavaScript", icon: js, to: "https://developer.mozilla.org/fr/docs/Web/JavaScript" },
-    ],
-  },
-  {
-    title: "Développement Backend",
-    items: [
-      { name: "Node.js", icon: node, to: "https://nodejs.org/" },
-      { name: "Prisma", icon: prisma, to: "https://www.prisma.io/" },
-      { name: "MySQL", icon: mysql, to: "https://www.mysql.com/" },
-      { name: "PostgreSQL", icon: postgres, to: "https://www.postgresql.org/" },
-      { name: "MongoDB", icon: mongo, to: "https://www.mongodb.com/" },
-    ],
-  },
-  {
-    title: "Langages Polyvalents",
-    items: [
-      { name: "Python", icon: pypy, to: "https://www.python.org/" },
-      { name: "Java", icon: java, to: "https://www.java.com/" },
-      { name: "Swift", icon: swift, to: "https://developer.apple.com/swift/" },
-      { name: "Kotlin", icon: kotlin, to: "https://kotlinlang.org/" },
-      { name: "PHP", icon: php, to: "https://www.php.net/" },
-    ],
-  },
-  {
-    title: "Outils & autres",
-    items: [
-      { name: "GitHub", icon: github, to: "https://github.com/" },
-      { name: "Trello", icon: trello, to: "https://trello.com/" },
-      { name: "Figma", icon: figma, to: "https://figma.com/" },
-      { name: "Docker", icon: docker, to: "https://www.docker.com/" },
-      { name: "Postman", icon: postman, to: "https://www.postman.com/" },
-      { name: "Spring boot", icon: springboot, to: "https://spring.io/projects/spring-boot" },
-    ],
-  },
-];
 
 const Competences = () => {
+  const icons = {
+    React: react,
+    "Vue.js": vue,
+    HTML5: html,
+    CSS3: css,
+    JavaScript: js,
+    "Node.js": node,
+    Prisma: prisma,
+    MySQL: mysql,
+    PostgreSQL: postgres,
+    MongoDB: mongo,
+    Python: pypy,
+    Java: java,
+    Kotlin: kotlin,
+    PHP: php,
+    Swift: swift,
+    GitHub: github,
+    Trello: trello,
+    Figma: figma,
+    Docker: docker,
+    Postman: postman,
+    "Spring boot": springboot,
+  };
+  
+  const { t } = useTranslation();
+
+  const competencesData = t('competences', { returnObjects: true });
+
   return (
-    <div className="p-[10%] pt-20 pb-20">
+    <div className="p-[10%] pb-20 pt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {competencesData.map((table, i) => (
           <div key={i} className="table-skill p-6 border border-[5px] border-[#A46D26]">
             <h3 className="text-2xl font-bold text-white mb-4">{table.title}</h3>
             <div className="flex flex-wrap gap-4">
               {table.items.map((skill, j) => (
-                <Link key={j} className="skill-icon" to={skill.to} target="_blank">
+                <Link key={j} className="skill-icon" to={skill.to} target="_blank" rel="noreferrer">
                   <div className="plate">
-                    <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain" />
+                    <img src={icons[skill.name]} alt={skill.name} className="w-10 h-10 object-contain" />
                   </div>
                   <span className="tooltip">{skill.name}</span>
                 </Link>

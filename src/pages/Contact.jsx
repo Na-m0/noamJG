@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative p-[10%] pt-28 pb-20">
 
@@ -15,24 +18,24 @@ const Contact = () => {
       <div className="relative z-10 grid md:grid-cols-2 gap-12">
         {/* Infos perso */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">Mes informations</h2>
-          <p><strong>Nom :</strong> Joly-Girods</p>
-          <p><strong>Prénom :</strong> Noam</p>
+          <h2 className="text-2xl font-semibold">{t('contact.title')}</h2>
+          <p><strong>{t('contact.nom')} :</strong> Joly-Girods</p>
+          <p><strong>{t('contact.prenom')} :</strong> Noam</p>
           <p><strong>Email :</strong> <a className="underline hover:text-[#888]" href="mailto:noam@example.com">noamjoly2812@gmail.com</a></p>
-          <p><strong>Téléphone :</strong> <a className="underline hover:text-[#888]" href="tel:+33613593945">+33 6 13 59 39 45</a></p>
+          <p><strong>{t('contact.tel')} :</strong> <a className="underline hover:text-[#888]" href="tel:+33613593945">+33 6 13 59 39 45</a></p>
         </div>
 
         {/* Formulaire */}
         <form className="space-y-6 bg-white p-8 rounded-2xl shadow-lg">
-          <h2 className="text-xl font-semibold mb-4">M'envoyer un message</h2>
+          <h2 className="text-xl font-semibold mb-4">{t('contact.message')}</h2>
           <input
             type="text"
-            placeholder="Nom"
+            placeholder={t('contact.nom')}
             className="w-full border-b-2 border-[#EDE8FF] p-2 outline-none focus:border-[#444444] bg-transparent"
           />
           <input
             type="text"
-            placeholder="Prénom"
+            placeholder={t('contact.prenom')}
             className="w-full border-b-2 border-[#EDE8FF] p-2 outline-none focus:border-[#444444] bg-transparent"
           />
           <input
@@ -41,7 +44,7 @@ const Contact = () => {
             className="w-full border-b-2 border-[#EDE8FF] p-2 outline-none focus:border-[#444444] bg-transparent"
           />
           <textarea
-            placeholder="Votre message..."
+            placeholder={t('contact.Votre_message')}
             rows="5"
             className="w-full border-b-2 border-[#EDE8FF] p-2 outline-none focus:border-[#444444] bg-transparent resize-none"
           ></textarea>
@@ -49,7 +52,7 @@ const Contact = () => {
             type="submit"
             className="bg-[#EDE8FF] hover:bg-[#d8d0ff] text-[#444444] px-6 py-2 rounded-full transition"
           >
-            Envoyer
+            {t('contact.envoyer')}
           </button>
         </form>
       </div>
