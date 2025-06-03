@@ -13,6 +13,8 @@ import Contact from './pages/Contact';
 import DetailProjet from './components/Projet/DetailProjet';
 import Footer from './pages/Footer/Footer';
 import ScrollToTop from './pages/Transition/ScrollToTop';
+import StageAsporta from './components/Stage/StageAsporta';
+import SaeYoleau from './components/Sae/SaeS6';
 
 function App() {
   const location = useLocation();
@@ -30,6 +32,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<DetailProjet />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/stage-asporta" element={<StageAsporta />} />
+        <Route path="/sae-yoleau" element={<SaeYoleau />} />
       </Routes>
       {showNavBar && <Footer/>}
     </TransitionProvider>

@@ -293,6 +293,24 @@
       "message": "M'envoyer un message",
       "Votre_message": "Votre message",
       "envoyer": "Envoyer"
+    },
+
+
+
+    "portfolio": {
+      "texte": "Voici mes différents projet tutoré et stage que j’ai effectuer lors de mes années de BUT informatique à l’IUT nord franche-compté",
+      "stage": "Stage 3eme année BUT informatique",
+      "sae": "SAE 3eme année but informatique"
+    },
+
+    "saes6": {
+      "title": "Yoleau — application d'analyse de rivières",
+      "description": "L’application a pour objectif principal d’analyser l’eau des rivières afin de fournir des informations précises sur sa qualité, en particulier pour les amateurs de baignade en pleine nature. Elle est équipée de capteurs mesurant le pH, la turbidité, la température et la conductivité de l’eau. En plus de ces mesures, une analyse des vidéos prises par les utilisateurs permet de calculer le débit du courant. Grâce à une intelligence artificielle, l’application est capable de prédire l’évolution de certaines variables sur une période de sept jours, offrant ainsi à l’utilisateur une meilleure anticipation des conditions d’eau."
+    },
+
+    "stage": {
+      "title": "ASPORTA — Site web dynamique",
+      "description": "Développement d'un premier site web dynamique pour l'association ASPORTA connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord."
     }
 
 }

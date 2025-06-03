@@ -291,7 +291,24 @@
     "message": "Send me a message",
     "Votre_message": "Your message",
     "envoyer": "Send"
-  }
+  },
 
+
+
+  "portfolio": {
+    "texte": "Here are my various supervised projects and internships that I carried out during my years of BUT computer science at the IUT Nord Franche-Comté",
+    "stage": "3rd year internship BUT computer science",
+    "sae": "SAE 3rd year of BUT computer science"
+  },
+
+  "saes6": {
+    "title": "Yoleau — river analysis application",
+    "description": "The app's primary purpose is to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts. It is equipped with sensors that measure pH, turbidity, temperature, and water conductivity. In addition to these measurements, an analysis of videos taken by users allows for the calculation of current flow. Using artificial intelligence, the app is able to predict the evolution of certain variables over a seven-day period, thus providing the user with better anticipation of water conditions."
+  },
+
+  "stage": {
+    "title": "ASPORTA — Dynamic website",
+    "description": "Development of a first dynamic website for the ASPORTA association connected to a database, with users having different roles and site management functionalities via a dashboard."
+  }
 
 }
