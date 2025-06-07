@@ -295,18 +295,75 @@
       "envoyer": "Envoyer"
     },
 
-
-
     "portfolio": {
       "texte": "Voici mes différents projet tutoré et stage que j’ai effectuer lors de mes années de BUT informatique à l’IUT nord franche-compté",
       "stage": "Stage 3eme année BUT informatique",
       "sae": "SAE 3eme année but informatique"
     },
 
+
+    "ce_que_j_en_tire": "Ce que j'en tire",
+
     "saes6": {
       "title": "Yoleau — application d'analyse de rivières",
-      "description": "L’application a pour objectif principal d’analyser l’eau des rivières afin de fournir des informations précises sur sa qualité, en particulier pour les amateurs de baignade en pleine nature. Elle est équipée de capteurs mesurant le pH, la turbidité, la température et la conductivité de l’eau. En plus de ces mesures, une analyse des vidéos prises par les utilisateurs permet de calculer le débit du courant. Grâce à une intelligence artificielle, l’application est capable de prédire l’évolution de certaines variables sur une période de sept jours, offrant ainsi à l’utilisateur une meilleure anticipation des conditions d’eau."
+      "description": "Application permettant d'analyser l'eau des rivières afin de fournir des informations précises sur sa qualité, en particulier pour les amateurs de baignade en pleine nature.",
+      "context": [
+        {
+          "text": "L’application a pour objectif principal d’analyser l’eau des rivières afin de fournir des informations précises sur sa qualité, en particulier pour les amateurs de baignade en pleine nature. Elle est équipée de capteurs mesurant le pH, la turbidité, la température et la conductivité de l’eau. En plus de ces mesures, une analyse des vidéos prises par les utilisateurs permet de calculer le débit du courant. Grâce à une intelligence artificielle, l’application est capable de prédire l’évolution de certaines variables sur une période de sept jours, offrant ainsi à l’utilisateur une meilleure anticipation des conditions d’eau.",
+          "image": ""
+        }
+      ],
+      "title_comp1": "Réaliser un développement d’application",
+      "title_comp2": "Conduire un projet",
+      "competence_acquise": [
+        {
+          "title": "",
+          "description": "",
+          "images": [            
+            { "url": "../images/sae.png", "figure": "" }
+          ]
+        }
+      ],
+      "competence_acquise2": [
+        {
+          "title": "",
+          "description": "",
+          "images": [
+          ]
+        }
+      ],
+      "collaborateurs": [
+        {
+          "name": "Sefa Tas",
+          "github": "https://github.com/sefats"
+        },
+        {
+          "name": "Timon Dubreuil",
+          "github": ""
+        },
+        {
+          "name": "Théo Viévilles",
+          "github": ""
+        },
+        {
+          "name": "Nunzio",
+          "github": ""
+        }
+      ],
+      "ce_que_j_en_tire": [
+        {
+          "title": "Compétences Interpersonnelles Développées",
+          "description": "En collaborant avec mon équipe sur divers projets, j'ai amélioré mes compétences en communication et en collaboration. J'ai appris à partager efficacement des idées, à donner et à recevoir des retours constructifs, et à travailler ensemble pour résoudre des problèmes complexes.",
+          "image": ""
+        },
+        {
+          "title": "Compétences Techniques Développées",
+          "description": "",
+          "image": ""
+        }
+      ]
     },
+    
 
     "stage": {
       "title": "ASPORTA — Site web dynamique",

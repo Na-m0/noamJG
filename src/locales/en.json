@@ -301,9 +301,66 @@
     "sae": "SAE 3rd year of BUT computer science"
   },
 
+  "ce_que_j_en_tire": "What I get from it",
+
   "saes6": {
-    "title": "Yoleau — river analysis application",
-    "description": "The app's primary purpose is to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts. It is equipped with sensors that measure pH, turbidity, temperature, and water conductivity. In addition to these measurements, an analysis of videos taken by users allows for the calculation of current flow. Using artificial intelligence, the app is able to predict the evolution of certain variables over a seven-day period, thus providing the user with better anticipation of water conditions."
+    "title": "Yoleau — River analysis application",
+    "description": "Application allowing to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts.",
+    "context": [
+      {
+        "text": "The app's primary purpose is to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts. It is equipped with sensors that measure pH, turbidity, temperature, and water conductivity. In addition to these measurements, an analysis of videos taken by users allows for the calculation of current flow. Using artificial intelligence, the app is able to predict the evolution of certain variables over a seven-day period, thus providing the user with better anticipation of water conditions.",
+        "image": ""
+      }
+    ],
+    "title_comp1": "Realize an application development",
+    "title_comp2": "Conduct a project",
+    "competence_acquise": [
+      {
+        "title": "",
+        "description": "",
+        "images": [            
+          { "url": "../images/sae.png", "figure": "" }
+        ]
+      }
+    ],
+    "competence_acquise2": [
+      {
+        "title": "",
+        "description": "",
+        "images": [
+        ]
+      }
+    ],
+    "collaborateurs": [
+      {
+        "name": "Sefa Tas",
+        "github": "https://github.com/sefats"
+      },
+      {
+        "name": "Timon Dubreuil",
+        "github": ""
+      },
+      {
+        "name": "Théo Viévilles",
+        "github": ""
+      },
+      {
+        "name": "Nunzio",
+        "github": ""
+      }
+    ],
+    "ce_que_j_en_tire": [
+      {
+        "title": "Developed interpersonal skills",
+        "description": "By collaborating with my team on various projects, I have improved my communication and collaboration skills. I have learned to share ideas effectively, give and receive constructive feedback, and work together to solve complex problems.",
+        "image": ""
+      },
+      {
+        "title": "Developed technical skills",
+        "description": "",
+        "image": ""
+      }
+    ]
   },
 
   "stage": {
