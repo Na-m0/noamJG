@@ -28,7 +28,6 @@ const Footer = () => {
           <ul className="space-y-1">
             <li><Link to="/home" className="hover:text-gray-400 transition">{t("footer.home")}</Link></li>
             <li><Link to="/about" className="hover:text-gray-400 transition">{t("footer.about")}</Link></li>
-            <li><Link to="/portfolio" className="hover:text-gray-400 transition">{t("footer.portfolio")}</Link></li>
             <li><Link to="/projects" className="hover:text-gray-400 transition">{t("footer.projects")}</Link></li>
             <li><Link to="/contact" className="hover:text-gray-400 transition">{t("footer.contact")}</Link></li>
           </ul>
