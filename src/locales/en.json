@@ -290,7 +290,9 @@
     "tel": "Phone",
     "message": "Send me a message",
     "Votre_message": "Your message",
-    "envoyer": "Send"
+    "envoyer": "Send",
+    "objet": "Subject",
+    "merci": "Your message has been sent successfully! Thank you very much! 🐒"
   },
 
 
@@ -304,68 +306,194 @@
   "ce_que_j_en_tire": "What I get from it",
 
   "saes6": {
-    "title": "Yoleau — River analysis application",
-    "description": "Application allowing to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts.",
+    "title": "Yoleau — River Analysis Application",
+    "description": "Application enabling the analysis of river water to provide accurate insights into its quality, especially for outdoor swimming enthusiasts.",
     "context": [
       {
-        "text": "The app's primary purpose is to analyze river water to provide accurate information on its quality, particularly for outdoor swimming enthusiasts. It is equipped with sensors that measure pH, turbidity, temperature, and water conductivity. In addition to these measurements, an analysis of videos taken by users allows for the calculation of current flow. Using artificial intelligence, the app is able to predict the evolution of certain variables over a seven-day period, thus providing the user with better anticipation of water conditions.",
+        "text": "The app's primary goal is to analyze river water and deliver precise information on its quality, catering particularly to nature swimming enthusiasts. It’s equipped with sensors measuring pH, turbidity, temperature, and conductivity. Moreover, the app analyzes user-recorded videos to calculate stream flow. Leveraging an artificial intelligence model, it can predict the evolution of certain water quality variables over a seven-day period, giving users better foresight into water conditions.",
         "image": ""
       }
     ],
-    "title_comp1": "Realize an application development",
-    "title_comp2": "Conduct a project",
+    "title_comp1": "Architect a Complex Application",
+    "title_comp2": "Develop a Full-Stack Application",
+  
     "competence_acquise": [
       {
-        "title": "",
-        "description": "",
+        "title": "Design of a Multi-Tiered System Architecture",
+        "description": "In this project, I helped design a comprehensive system spanning multiple software and hardware layers. The architecture coordinates communication between various modules (mobile, web, IoT devices, AI), all centralized around a dedicated server. This global vision deepened my understanding of interoperability challenges among heterogeneous systems.",
         "images": [            
-          { "url": "../images/sae.png", "figure": "" }
+          { "url": "../images/saes6/schema_architechture.png", "figure": "Application Architecture Diagram" }
         ]
+      },
+      {
+        "title": "Implementation of a Centralized Data Server",
+        "description": "We implemented a central server that receives and stores data from: <ul><li>the mobile app (flow analysis)</li><li>Arduino sensors (water quality)</li></ul> This server acts as the single point of integration, structuring data and making it accessible via a secure REST API. It also manages history, sensor identifiers, and synchronization across modules.",
+        "images": [            
+          { "url": "../images/saes6/schema_serveur_centralisation.png", "figure": "Mobile + Microcontrollers → Central Server" },
+          { "url": "../images/saes6/serveur_to_api.png", "figure": "Server-to-API Communication Diagram" }
+        ]
+      },
+      {
+        "title": "Web Application Connected to the API",
+        "description": "The web app was built in Vue 3 and split into two interfaces: <ul><li>Visitor: dynamic display of water quality data via Chart.js with live updates from the API</li><li>Administrator: fleet management of microcontrollers with dynamic configuration</li></ul>The interface communicates in real time with the API for up-to-date data display and efficient device control.",
+        "images": [            
+          { "url": "../images/sae.png", "figure": "Web Application Interface" }
+        ]
+      },
+      {
+        "title": "Database Optimized for Environmental Time-Series",
+        "description": "We designed a MongoDB database tailored for environmental time-series data. Each sensor sends periodic measurements (pH, turbidity, temperature, conductivity), which are tagged and stored over time. This setup enables filtering and correlation of data to support analysis and feed the predictive system.",
+        "images": [            
+          { "url": "../images/saes6/bdd.png", "figure": "Database Schema" }
+        ]
+      },
+      {
+        "title": "Mobile App for Stream Flow Analysis",
+        "description": "A mobile application allows users to record river videos. A local or embedded AI analyzes the footage to estimate current speed by detecting movement of floating objects. The result is then automatically sent to the central server to enrich the data set.",
+        "images": [            
+          { "url": "../images/saes6/app_mobile.png", "figure": "Mobile App Interface" }
+        ]
+      },
+      {
+        "title": "Integration of Predictive Artificial Intelligence",
+        "description": "We trained an AI model to forecast water quality trends over a seven-day horizon. It uses historical data from sensors and mobile videos. Predictions are sent to the server and redistributed via the API to the web app—offering users a predictive insight into upcoming conditions."
       }
     ],
     "competence_acquise2": [
       {
-        "title": "",
-        "description": "",
+        "title": "Development of an Interactive Web Application",
+        "description": "I built a web application in Vue 3 with Vuetify, enabling real-time display of water quality data through interactive Chart.js visuals. It fetches data via a REST API, filters it per user, and displays a clear, visual summary. The admin area supports management of sensor devices (add/remove/configure) and user rights.",
         "images": [
+          { "url": "../images/sae.png", "figure": "Web App Screenshot" },
+          { "url": "../images/saes6/boitier.png", "figure": "Sensor Hardware View" },
+          { "url": "../images/saes6/administrateur.png", "figure": "Admin & User Management View" },
+          { "url": "../images/saes6/connexion.png", "figure": "Login Screen View" }
         ]
+      },
+      {
+        "title": "API Development with Node.js",
+        "description": "I developed the backend API in Node.js using Express. It centralizes data from: <ul><li>Arduino microcontrollers</li><li>Mobile app</li><li>Predictive AI</li><li>Web interface</li></ul>Routes are secure and RESTful, ensuring reliability and maintainability. The API handles read/write requests to the MongoDB database."
+      },
+      {
+        "title": "Development of a Mobile Video Analysis App",
+        "description": "We created a mobile app capable of capturing short river videos. After recording, an embedded or connected AI model estimates current speed. The result is then sent automatically to the server, showcasing expertise in mobile‑to‑API communication and video‑based environmental data analysis."
+      },
+      {
+        "title": "Embedded Programming for Arduino Microcontrollers",
+        "description": "I programmed Arduino boards equipped with sensors (pH, temperature, turbidity, conductivity). These units measure data periodically and use Wi‑Fi to send it to the central server. The firmware includes verification, recalibration logic, and fault or connection‑loss management.",
+        "images": [
+          { "url": "../images/saes6/microcontroleurs.png", "figure": "Microcontroller Setup View" }
+        ]
+      },
+      {
+        "title": "AI-Based Prediction Pipeline Integration",
+        "description": "We developed and integrated an AI system capable of forecasting water quality over a week. I contributed to data preparation, model training, and pipeline integration into the API. This gave hands-on experience linking machine learning with a full application stack."
       }
     ],
     "collaborateurs": [
-      {
-        "name": "Sefa Tas",
-        "github": "https://github.com/sefats"
-      },
-      {
-        "name": "Timon Dubreuil",
-        "github": ""
-      },
-      {
-        "name": "Théo Viévilles",
-        "github": ""
-      },
-      {
-        "name": "Nunzio",
-        "github": ""
-      }
+      { "name": "Sefa Tas", "github": "https://github.com/sefats" },
+      { "name": "Timon Dubreuil", "github": "" },
+      { "name": "Théo Viévilles", "github": "" },
+      { "name": "Nunzio Silarbi", "github": "" }
     ],
     "ce_que_j_en_tire": [
       {
-        "title": "Developed interpersonal skills",
-        "description": "By collaborating with my team on various projects, I have improved my communication and collaboration skills. I have learned to share ideas effectively, give and receive constructive feedback, and work together to solve complex problems.",
+        "title": "Interpersonal Skills Developed",
+        "description": "By collaborating with my team on various projects, I improved my communication and teamwork skills. I learned to effectively share ideas, give and receive constructive feedback, and work together to solve complex challenges.",
         "image": ""
       },
       {
-        "title": "Developed technical skills",
-        "description": "",
+        "title": "Technical Skills Developed",
+        "description": "This project allowed me to strengthen and broaden my technical capabilities across multiple domains. I worked on a complete ecosystem—from responsive web interfaces to low-level microcontroller programming, through REST API creation, NoSQL database handling, and AI integration. I also gained a better understanding of data flow between heterogeneous systems, data structuring, visualization, and real-world concerns like data quality, fault tolerance, and environmental forecasting.",
         "image": ""
       }
     ]
   },
 
+
   "stage": {
     "title": "ASPORTA — Dynamic website",
-    "description": "Development of a first dynamic website for the ASPORTA association connected to a database, with users having different roles and site management functionalities via a dashboard."
+    "description": "Development of a first dynamic website for the ASPORTA association, connected to a database, with users having different roles and site management functionalities through an admin dashboard.",
+    "context": [
+      {
+        "text": "ASPORTA is an association of sports directors and managers in local governments. Their goal is to promote local sports activities through events, partnerships, and awareness operations. My role was to design, develop, and deploy a dynamic website that showcases their work while providing a secure admin interface for autonomous content management.",
+        "image": "../images/stage_but3/asporta.JPG"
+      }
+    ],
+    "title_comp1": "Full-stack web development",
+    "title_comp2": "Project management and professionalization",
+    "competence_acquise": [
+      {
+        "title": "Building a secure back-end with Node.js, Express, and PostgreSQL",
+        "description": "I developed a REST API using Express.js to manage the association’s entities (administrators, events, news, operations, images, etc.). I used Prisma to model the PostgreSQL database and implemented role-based authentication to restrict access to sensitive features (e.g., news creation)."
+      },
+      {
+        "title": "Development of the public website with React and Tailwind CSS",
+        "description": "I designed a smooth, responsive user interface with React using reusable components. Tailwind CSS was used to build a modern design that matches the association’s identity. Visitors can access news, actions, locations, and partners without needing an account.",
+        "images": [
+          { "url": "/images/stage_but3/homepage.png", "figure": "ASPORTA website homepage showcasing events." },
+          { "url": "/images/stage_but3/actualite.png", "figure": "Example of a page listing the association’s news." }
+        ]
+      },
+      {
+        "title": "Implementation of an admin dashboard",
+        "description": "The dashboard allows administrators to add, edit, or delete content. A detailed role management system controls access rights. The interface was designed to be simple, clear, and efficient.",
+        "images": [
+          { "url": "/images/stage_but3/administrateurs.png", "figure": "User management interface." },
+          { "url": "/images/stage_but3/ajout_event.png", "figure": "Event creation interface." }
+        ]
+      },
+      {
+        "title": "Creation of dynamic and customizable content",
+        "description": "When creating an event or news post, I implemented an interface allowing administrators to dynamically add sections, each containing one or more paragraphs. Each paragraph can be: text only, text with an image, video only, or text with a video. Additionally, I added the ability to create custom tables for operations. The administrator can easily reference the locations related to an operation in a clear and scalable way.",
+        "images": [
+          {
+            "url": "/images/stage_but3/ajout_paragraphes_sections.png",
+            "figure": "Form to add sections and paragraphs to a news post."
+          },
+          {
+            "url": "/images/stage_but3/resultat_ajout_section.png",
+            "figure": "Display of an event with a customized section."
+          },
+          {
+            "url": "/images/stage_but3/ajout_tableau_operation.png",
+            "figure": "Form to add custom tables for operations."
+          },
+          {
+            "url": "/images/stage_but3/resultat_tableau.png",
+            "figure": "Display of an operation with a personalized table."
+          }
+        ]
+      },
+      {
+        "title": "Deployment and security",
+        "description": "The website was deployed on a cloud platform (Render for the back-end, Vercel for the front-end). I implemented password hashing using bcrypt, JWT tokens with expiration, and a role verification middleware to protect sensitive routes."
+      }
+    ],
+    "competence_acquise2": [
+      {
+        "title": "Client communication and Agile project management",
+        "description": "I used Trello to manage tasks using the Agile method. Regular meetings with the client allowed us to validate deliverables step by step, adjust certain features, and prioritize the most important needs.",
+        "images": [
+          { "url": "/images/stage_but3/trello.png", "figure": "Trello board used to organize the project in sprints." }
+        ]
+      },
+      {
+        "title": "Adapting the website to the association's specific constraints",
+        "description": "The project was tailor-made to meet the association's requirements: no online account creation, admin-only access to content management, custom information entry, etc."
+      }
+    ],
+    "ce_que_j_en_tire": [
+      {
+        "title": "Strengthening my full-stack web development skills",
+        "description": "This project allowed me to fully master a complete web project from start to finish: database, API, front-end, security, deployment… all while working autonomously and meeting a real client's expectations."
+      },
+      {
+        "title": "Hands-on experience in IT project management",
+        "description": "By managing this project alone, I learned how to organize my work, prioritize tasks, handle client requests, and iterate effectively. This experience gave me the confidence to take on larger-scale professional projects."
+      }
+    ]
   }
+
 
 }

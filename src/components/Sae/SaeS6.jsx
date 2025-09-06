@@ -7,7 +7,7 @@ import Carousel from "../Carousel";
 const SaeS6 = () => {
     const { t } = useTranslation();
     const saes6 = t("saes6", { returnObjects: true });
-    const technologies = ['Vue.js', 'Node.js', 'PostgreSQL', 'ServerTCP', 'Arduino', 'IA'];
+    const technologies = ['Vue.js', 'Node.js', 'PostgreSQL', 'ServerTCP', 'Arduino', 'AI'];
 
   return (
     <div className="p-[10%] pt-28 pb-20">
@@ -134,7 +134,7 @@ const SaeS6 = () => {
        )}
        <div className="mt-20">
            <Link
-               to="/projects"
+               to="/portfolio"
                className="text-[#7b61ff] hover:underline"
            >
                ← {t('Retour')}

@@ -23,7 +23,7 @@ const A_propos = () => {
             </div>
             <div className="flip-card-back">
               <img
-                src="./images/JOLY-GIRODS_Noam_A2_photo.jpg"
+                src="./images/NoamJG_photo.jpg"
                 alt=""
                 className="rounded-[1rem]"
               />

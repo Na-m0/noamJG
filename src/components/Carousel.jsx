@@ -143,7 +143,7 @@ const Carousel = ({ competences }) => {
   
           <div
             ref={containerRef}
-            className="flex flex-col md:flex-row items-center gap-10 cursor-grab select-none"
+            className={`flex flex-col ${images.length > 0 ? "md:flex-row items-center" : ""} gap-10 cursor-grab select-none`}
             onMouseDown={onDragStart}
             onMouseMove={onDragMove}
             onMouseUp={onDragEnd}
@@ -156,9 +156,12 @@ const Carousel = ({ competences }) => {
             }}
           >
             {/* Texte à gauche */}
-            <div className="w-full md:w-1/2">
+            <div className={`w-full ${images.length > 0 ? "md:w-1/2" : ""}`}>
               <div className="text-[20px] font-semibold mb-4">{competence.title}</div>
-              <p className="text-left text-[16px]">{competence.description}</p>
+              <div
+                className="text-left text-[16px] [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-1"
+                dangerouslySetInnerHTML={{ __html: competence.description }}
+              />
             </div>
   
             {/* Images à droite */}
@@ -169,7 +172,7 @@ const Carousel = ({ competences }) => {
                     <img
                       src={images[currentImageIndex].url}
                       alt={`${competence.title} - ${currentImageIndex + 1}`}
-                      className="w-full rounded cursor-pointer transition"
+                      className="w-full max-w-[400px] max-h-[500px] rounded cursor-pointer transition"
                       onClick={() => setIsModalOpen(true)}
                     />
                     {images.length > 1 && (

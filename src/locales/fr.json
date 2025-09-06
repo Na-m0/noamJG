@@ -245,7 +245,7 @@
 
 
     "about_intro": {
-      "p1": "<0>Étudiant en troisième année de BUT informatique</0>, je m’investis dans le développement de <1>d’applications web</1> et <2>mobiles</2> avec l’envie de créer des solutions concrètes et utiles.",
+      "p1": "<0>Étudiant en troisième année de BUT informatique</0>, je m’investis dans le développement <1>d’applications web</1> et <2>mobiles</2> avec l’envie de créer des solutions concrètes et utiles.",
       "p2": "Mon parcours m’a conduit à explorer différents aspects du <0>développement</0>, de la <1>programmation</1> à la <2>gestion de bases de données</2>, en passant par le <3>travail en équipe</3> sur des projets collaboratifs. Ces expériences m’ont permis de développer un <4>sens de l’organisation</4>, de la <5>rigueur</5> et une <6>capacité à m’adapter</6> aux défis rencontrés. J’aime particulièrement apprendre de nouvelles technologies et les mettre en œuvre pour résoudre des problèmes réels. Que ce soit en autonomie ou au sein d’une équipe, je cherche toujours à évoluer tout en apportant une contribution utile. Mon objectif est de continuer à progresser dans un domaine où chaque projet peut avoir un véritable impact."
     },
     "about_education_title": "Mes formations",
@@ -292,7 +292,9 @@
       "tel": "Téléphone",
       "message": "M'envoyer un message",
       "Votre_message": "Votre message",
-      "envoyer": "Envoyer"
+      "envoyer": "Envoyer",
+      "objet": "Objet",
+      "merci": "Votre message a été envoyé avec succès ! Merci beaucoup ! 🐒"
     },
 
     "portfolio": {
@@ -313,23 +315,80 @@
           "image": ""
         }
       ],
-      "title_comp1": "Réaliser un développement d’application",
-      "title_comp2": "Conduire un projet",
+      "title_comp1": "Architecturer une application complexe",
+      "title_comp2": "Réaliser un développement d’application",
+
       "competence_acquise": [
         {
-          "title": "",
-          "description": "",
+          "title": "Conception d’un système multi-architectures",
+          "description": "Dans ce projet, j’ai contribué à la conception d’un système complet réparti sur plusieurs couches logicielles et matérielles. L’architecture repose sur une communication entre différents modules (mobile, web, objets connectés, intelligence artificielle), centralisés autour d’un serveur de centralisation. Cette vision globale m’a permis de mieux comprendre les enjeux de communication entre systèmes hétérogènes.",
           "images": [            
-            { "url": "../images/sae.png", "figure": "" }
+            { "url": "../images/saes6/schema_architechture.png", "figure": "Schéma de l'architecture de l'application" }
           ]
+        },
+        {
+          "title": "Mise en place d’un serveur de centralisation des données",
+          "description": "Nous avons développé un serveur de centralisation qui reçoit et stocke les données provenant de : <ul><li>l’application mobile (analyse du courant)</li><li>des capteurs Arduino (qualité de l’eau)</li></ul> Ce serveur agit comme point de convergence, structurant les données et les rendant accessibles via une API REST sécurisée. Il permet également de gérer l’historique, les identifiants des capteurs, et la synchronisation entre les différents modules.",
+          "images": [            
+            { "url": "../images/saes6/schema_serveur_centralisation.png", "figure": "Schéma de l'aplication mobile et des microcontrôleurs vers le serveur de centralisation" },
+            { "url": "../images/saes6/serveur_to_api.png", "figure": "Schéma de la communication entre le serveur et l'API" }
+          ]
+        },
+        {
+          "title": "Application Web connectée à l’API",
+          "description": "L’application web a été développée en Vue 3. Elle est divisée en deux interfaces : <ul><li>Visiteur : affichage dynamique de la qualité de l’eau via des graphiques (Chart.js) sur des données récupérées via API</li><li>Administrateur : gestion de la flotte de microcontrôleurs et configuration dynamique</li></ul>L’interface communique en temps réel avec l’API, rendant possible un affichage des données à jour et une gestion efficace des appareils connectés.",
+          "images": [            
+            { "url": "../images/sae.png", "figure": "Application web" }
+          ]
+        },
+        {
+          "title": "Base de données optimisée pour des mesures environnementales",
+          "description": "Nous avons conçu une base de données MongoDB adaptée à des séries temporelles environnementales. Chaque capteur envoie périodiquement des données (pH, turbidité, température, conductivité), identifiées et historisées. Cela permet de filtrer et croiser les informations pour affiner l’analyse, et d’alimenter le système de prévision.",
+          "images": [            
+            { "url": "../images/saes6/bdd.png", "figure": "Base de données" }
+          ]
+        },
+        {
+          "title": "Application mobile pour l’analyse du courant",
+          "description": "Une application mobile permet aux utilisateurs de filmer la rivière. Une IA locale ou embarquée traite la vidéo afin d’estimer la vitesse du courant à l’aide de la détection de mouvements d’objets flottants. Le résultat est ensuite transmis automatiquement au serveur de centralisation pour enrichir les mesures disponibles.",
+          "images": [            
+            { "url": "../images/saes6/app_mobile.png", "figure": "Application mobile" }
+          ]
+        },
+        {
+          "title": "Intégration d’une intelligence artificielle prédictive",
+          "description": "Une IA a été entraînée à prédire l’évolution de la qualité de l’eau à 7 jours. Elle exploite les historiques de données envoyés par les capteurs et les vidéos mobiles. Son analyse est elle aussi envoyée au serveur, puis redistribuée via l’API à l’application web. Cette couche prévisionnelle renforce l’utilité de l’application, en anticipant les conditions à venir pour les usagers."
         }
       ],
       "competence_acquise2": [
         {
-          "title": "",
-          "description": "",
+          "title": "Développement d’une application web interactive",
+          "description": "J’ai développé une application web en Vue 3 avec Vuetify, permettant d’afficher les données de qualité de l’eau en temps réel via des graphiques interactifs (Chart.js). Elle récupère les données via une API REST, les filtre selon l’utilisateur et affiche une synthèse claire et visuelle. L’espace administrateur permet la gestion de la flotte de capteurs (ajout, suppression, configuration), démontrant une gestion dynamique des composants connectés. Il est aussi possible de gérer les utilisateurs et leurs droits.",
           "images": [
+            { "url": "../images/sae.png", "figure": "Visuel de l'application web" },
+            { "url": "../images/saes6/boitier.png", "figure": "Visuel des boitiers" },
+            { "url": "../images/saes6/administrateur.png", "figure": "Visuel de la gestion des administrateurs et des utilisateurs" },
+            { "url": "../images/saes6/connexion.png", "figure": "Visuel de la connexion" }
           ]
+        },
+        {
+          "title": "Développement de l’API en Node.js",
+          "description": "L’API centralise toutes les données en provenance des différents modules. Elle est codée en Node.js avec Express, et sert d’intermédiaire entre : <ul><li>les microcontrôleurs Arduino</li><li>l’application mobile</li><li>l’IA de prédiction</li><li>et l’interface web.</li></ul> Les routes sont sécurisées et structurées de manière RESTful pour garantir la fiabilité et la maintenabilité du système. L’API gère les requêtes de lecture/écriture dans la base MongoDB."
+        },
+        {
+          "title": "Développement d’une application mobile d’analyse vidéo",
+          "description": "Nous avons conçu une application mobile capable de capturer une courte vidéo de la rivière. Une fois la vidéo prise, elle est analysée par un modèle d’IA embarqué ou connecté, qui estime la vitesse du courant. Le résultat est ensuite automatiquement envoyé au serveur. Cela m’a permis de travailler sur la communication entre une application mobile et une API web, mais aussi d’intégrer un modèle d’analyse vidéo."
+        },
+        {
+          "title": "Programmation embarquée des microcontrôleurs Arduino",
+          "description": "J’ai programmé des Arduino équipés de capteurs (pH, température, turbidité, conductivité). Ces appareils mesurent régulièrement les données et les envoient automatiquement via Wi-Fi au serveur de centralisation. Le code intègre une logique de vérification et de recalibrage, ainsi qu’un système de gestion des pannes ou pertes de connexion.",
+          "images": [
+            { "url": "../images/saes6/microcontroleurs.png", "figure": "Visuel des microcontrôleurs" }
+          ]
+        },
+        {
+          "title": "Traitement et envoi de prédictions via l’IA",
+          "description": "Nous avons développé et intégré une intelligence artificielle capable de prédire l’évolution de la qualité de l’eau sur une semaine. J’ai participé à la phase de préparation des données, d’entraînement du modèle et de son intégration dans le pipeline d’envoi vers l’API. Cela m’a permis d’explorer concrètement l’interconnexion entre un système de machine learning et une application complète."
         }
       ],
       "collaborateurs": [
@@ -346,7 +405,7 @@
           "github": ""
         },
         {
-          "name": "Nunzio",
+          "name": "Nunzio Silarbi",
           "github": ""
         }
       ],
@@ -358,16 +417,98 @@
         },
         {
           "title": "Compétences Techniques Développées",
-          "description": "",
+          "description": "Ce projet m’a permis de consolider et d’élargir mes compétences techniques à plusieurs niveaux. J’ai travaillé sur un écosystème complet, allant du développement d’interfaces web réactives à la programmation bas-niveau de microcontrôleurs, en passant par la création d’API REST, la manipulation de bases de données NoSQL et l’intégration d’intelligence artificielle. Ce projet m’a également permis de mieux comprendre l’importance des communications entre systèmes hétérogènes, de la structuration des données à leur visualisation, et de m’initier à des problématiques réelles de qualité de données, de tolérance aux erreurs et de prévision environnementale.",
           "image": ""
         }
       ]
     },
     
 
+
+
+
+
     "stage": {
       "title": "ASPORTA — Site web dynamique",
-      "description": "Développement d'un premier site web dynamique pour l'association ASPORTA connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord."
+      "description": "Développement d'un premier site web dynamique pour l'association ASPORTA connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord.",
+      "context": [
+        {
+          "text": "ASPORTA est une association de directeurs et responsables des sports dans les collectivités territoriales. Leur objectif est de promouvoir les activités sportives locales à travers des événements, des partenariats et des opérations de sensibilisation. Mon rôle a été de concevoir, développer et déployer un site web dynamique qui permette de valoriser leurs actions, tout en proposant une interface d'administration sécurisée pour la gestion autonome du contenu.",
+          "image": "../images/stage_but3/asporta.JPG"
+        }
+      ],
+      "title_comp1": "Développement web full stack",
+      "title_comp2": "Gestion de projet et professionnalisation",
+      "competence_acquise": [
+        {
+          "title": "Création d’un back-end sécurisé avec Node.js, Express et PostgreSQL",
+          "description": "J’ai développé une API REST avec Express.js pour gérer les différentes entités de l’association (administrateurs, événements, actualités, opérations, images, etc.). J’ai utilisé Prisma pour modéliser la base PostgreSQL, et mis en place une logique d’authentification par rôle pour restreindre l’accès aux fonctions sensibles (ex : ajout d’actualités)."
+        },
+        {
+          "title": "Développement du site public avec React et Tailwind CSS",
+          "description": "J’ai conçu une interface utilisateur fluide et responsive en React, avec des composants réutilisables. Tailwind CSS a été utilisé pour un design moderne, adapté à l’image de l’association. Les visiteurs peuvent consulter les actualités, actions, lieux et partenaires sans avoir besoin de compte.",
+          "images": [
+            { "url": "/images/stage_but3/homepage.png", "figure": "Page d’accueil du site ASPORTA avec présentation des événements." },
+            { "url": "/images/stage_but3/actualite.png", "figure": "Exemple d’une page listant les actualités de l’association." }
+          ]
+        },
+        {
+          "title": "Mise en place d’un tableau de bord pour l’administration",
+          "description": "Le tableau de bord permet à l’administrateur d’ajouter/modifier/supprimer des contenus. Une gestion fine des rôles permet de contrôler les droits d’accès. L’interface a été pensée pour être simple, claire et efficace.",
+          "images": [
+            { "url": "/images/stage_but3/administrateurs.png", "figure": "Gestion des utilisateurs." },
+            { "url": "/images/stage_but3/ajout_event.png", "figure": "Interface d’ajout d’événements." }
+          ]
+        },
+        {
+          "title": "Création de contenus dynamiques et personnalisables",
+          "description": "Lors de la création d’un événement ou d’une actualité, j’ai mis en place une interface qui permet d’ajouter dynamiquement des sections, chacune composée d’un ou plusieurs paragraphes. Chaque paragraphe peut être : un texte seul, un texte avec une image, une vidéo seule ou un texte avec une vidéo. De plus, j’ai ajouté la possibilité de créer des tableaux personnalisés pour les opérations. L’administrateur peut ainsi facilement référencer les lieux concernés par une opération, de façon claire et évolutive.",
+          "images": [
+            {
+              "url": "/images/stage_but3/ajout_paragraphes_sections.png",
+              "figure": "Formulaire d’ajout de sections et de paragraphes dans une actualité."
+            },
+            {
+              "url": "/images/stage_but3/resultat_ajout_section.png",
+              "figure": "Affichage d’un événement avec la section personnalisée."
+            },
+            {
+              "url": "/images/stage_but3/ajout_tableau_operation.png",
+              "figure": "Formulaire d’ajout de tableaux personnalisés pour les opérations."
+            },
+            {
+              "url": "/images/stage_but3/resultat_tableau.png",
+              "figure": "Affichage d’une opération avec le tableau personnalisé."
+            }
+          ]
+        },
+        {
+          "title": "Déploiement et sécurité",
+          "description": "Le site a été déployé sur une plateforme cloud (render pour le back-end, Vercel pour le front-end). J’ai mis en place un système de hash de mots de passe avec bcrypt, de tokens JWT avec expiration, et d’un middleware de vérification des rôles pour protéger les routes sensibles."
+        }
+      ],
+      "competence_acquise2": [
+        {
+          "title": "Communication avec le client et gestion Agile",
+          "description": "J’ai utilisé Trello pour gérer les tâches en méthode Agile. Des points réguliers avec le client ont permis de valider les livrables au fur et à mesure, d’ajuster certaines fonctionnalités et de prioriser les besoins les plus importants.",
+          "images": [
+            { "url": "/images/stage_but3/trello.png", "figure": "Tableau Trello utilisé pour organiser le projet selon les sprints." }
+          ]
+        },
+        {
+          "title": "Adaptation du site aux contraintes de l’association",
+          "description": "Le projet a été conçu sur-mesure pour répondre aux exigences spécifiques de l’association : pas de création de comptes en ligne, rôle des l’admin, ajout des informations, etc."
+        }
+      ],
+      "ce_que_j_en_tire": [
+        {
+          "title": "Renforcement de mes compétences en développement web full-stack",
+          "description": "Ce projet m’a permis d’avoir une maîtrise complète d’un projet web de A à Z : base de données, API, front-end, sécurité, déploiement… en autonomie, tout en respectant les attentes d’un client réel."
+        },
+        {
+          "title": "Expérience concrète en gestion de projet informatique",
+          "description": "En gérant ce projet seul, j’ai appris à organiser mon travail, à prioriser, à gérer les demandes du client et à itérer efficacement. Cette expérience m’a donné confiance pour aborder des projets professionnels à plus grande échelle."
+        }
+      ]
     }
-
 }
