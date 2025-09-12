@@ -251,6 +251,18 @@
     "about_education_title": "Mes formations",
     "about_education": [
       {
+        "period": "Octobre 2025 - Août 2027",
+        "degree": "Epitech",
+        "location": "Strasbourg",
+        "description": "Formation en développement informatique avec spécialisation en :",
+        "specializations": [
+          "IA",
+          "Base de données",
+          "Application",
+          "DevOps"
+        ]
+      },
+      {
         "period": "Septembre 2022 - Juin 2025",
         "degree": "BUT Informatique — IUT Nord Franche-Comté",
         "location": "Belfort",
