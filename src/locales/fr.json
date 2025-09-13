@@ -103,7 +103,7 @@
       "description": "Application web de gestion de demandes informatiques en vue de la préparation budgétaire de la ville de Montbéliard. Effectué lors de mon stage de deuxième année.",
       "image": "../images/project2.png",
       "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
-      "link": "",
+      "link": "https://noamjg-portfolio.vercel.app/",
       "github": "",
       "type": "Web",
       "context": [
@@ -213,7 +213,7 @@
       "image": "../images/project7.png",
       "technologies": ["Kotlin", "Android Studio"],
       "link": "",
-      "github": "",
+      "github": "https://github.com/Na-m0/PopGuess",
       "type": "Mobile"
     },
     {
