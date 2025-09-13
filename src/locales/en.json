@@ -170,7 +170,7 @@
     {
       "id": "about-dailymotion",
       "title": "About Dailymotion",
-      "date": "2021",
+      "date": "2022",
       "description": "Website to learn about the history of Dailymotion.",
       "image": "../images/project5.png",
       "technologies": ["PHP", "Laravel", "MySQL"],
