@@ -188,11 +188,22 @@
       "image": "../images/project6.png",
       "technologies": ["PHP", "Laravel", "MySQL"],
       "link": "",
-      "github": "",
+      "github": "https://github.com/Na-m0/Letterboxd",
       "type": "Web",
       "collaborateurs": [
         { "name": "Sefa Tas", "github": "https://github.com/sefats" }
       ]
+    },
+    {
+      "id": "app-leveling",
+      "title": "App leveling",
+      "date": "2024",
+      "description": "Application mobile de liste de taches avec un système de niveau et de progression.",
+      "image": "../images/project9.png",
+      "technologies": ["Swift", "Xcode"],
+      "link": "",
+      "github": "",
+      "type": "Mobile"
     },
     {
       "id": "popguess",
