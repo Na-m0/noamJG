@@ -216,7 +216,7 @@
       "image": "../images/project8.png",
       "technologies": ["Node.js", "Socket.io", "Express.js", "MongoDB"],
       "link": "",
-      "github": "",
+      "github": "https://github.com/Na-m0/Chat-application",
       "type": "Web"
     }
   ],
