@@ -61,7 +61,7 @@ const DetailProjet = () => {
                                 rel="noopener noreferrer"
                                 className="bg-[#E2FFEB] px-4 py-2 rounded hover:bg-[#D7FFE3] transition text-sm flex items-center gap-2"
                             >
-                                <IoGlobeOutline className="text-[20px]"/> Accéder au site web
+                                <IoGlobeOutline className="text-[20px]"/> {t('acces_site')}
                             </a>
                         )}
 
@@ -72,7 +72,7 @@ const DetailProjet = () => {
                                 rel="noopener noreferrer"
                                 className="bg-[#EDE8FF] px-4 py-2 rounded hover:bg-[#E6DFFF] transition text-sm flex items-center gap-2"
                             >
-                                <FaGithub className="text-[20px]"/> Accéder au github
+                                <FaGithub className="text-[20px]"/> {t('acces_github')}
                             </a>
                         )}
                     </div>

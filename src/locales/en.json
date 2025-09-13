@@ -96,6 +96,8 @@
   "Retour": "Back to projects",
 
   "project_title": "Projects",
+  "acces_github": "Access the github",
+  "acces_site": "Access the website",
   "projects": [
     {
       "id": "gestion-demandes",
@@ -147,7 +149,7 @@
       "link": "",
       "github": "https://github.com/Na-m0/Quoridor",
       "type": "Autre",
-      "collaborators": [
+      "collaborateurs": [
         { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" },
         { "name": "Robin Cassard", "github": "https://github.com/nexiath" },
         { "name": "Sefa Tas", "github": "https://github.com/sefats" }
@@ -163,7 +165,7 @@
       "link": "",
       "github": "https://github.com/Na-m0/usb-key",
       "type": "Web",
-      "collaborators": [
+      "collaborateurs": [
         { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" }
       ]
     },
@@ -177,7 +179,7 @@
       "link": "https://sae-grp19.github.io/dailymotion/",
       "github": "https://github.com/sae-grp19/sae-grp19.github.io",
       "type": "Web",
-      "collaborators": [
+      "collaborateurs": [
         { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" }
       ]
     },
@@ -191,7 +193,7 @@
       "link": "",
       "github": "",
       "type": "Web",
-      "collaborators": [
+      "collaborateurs": [
         { "name": "Sefa Tas", "github": "https://github.com/sefats" }
       ]
     },

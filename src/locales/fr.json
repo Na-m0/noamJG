@@ -93,6 +93,8 @@
   "context": "Contexte",
   "competence_acquise": "Compétences acquises",
   "Retour": "Retour aux projets",
+  "acces_github": "Acceder au github",
+  "acces_site": "Acceder au site web",
   "projects": [
     {
       "id": "gestion-demandes",
