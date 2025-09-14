@@ -131,7 +131,7 @@
       "image": "../images/project1.png",
       "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
       "link": "https://balonu.vercel.app/",
-      "github": "",
+      "github": "https://github.com/Na-m0/balonu",
       "type": "Web",
       "collaborateurs": [
         { "name": "Elmir Gerovic", "github": "https://github.com/elmirge7" },
