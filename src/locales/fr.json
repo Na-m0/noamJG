@@ -98,7 +98,7 @@
   "projects": [
     {
       "id": "tsatgd",
-      "title": "Club de Tennis Tavaux Saint-Aubin Grand Dole",
+      "title": "TSATGD - Club de Tennis Tavaux Saint-Aubin Grand Dole",
       "date": "2025",
       "description": "Développement d'un site web dynamique pour le club de tennis du Tavaux Saint-Aubin Grand Dole connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord.",
       "image": "../images/stage_tennis.png",
