@@ -97,6 +97,28 @@
   "acces_site": "Acceder au site web",
   "projects": [
     {
+      "id": "tsatgd",
+      "title": "TSATGD - Club de Tennis Tavaux Saint-Aubin Grand Dole",
+      "date": "2025",
+      "description": "Développement d'un site web dynamique pour le club de tennis du Tavaux Saint-Aubin Grand Dole connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord.",
+      "image": "",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+      "link": "https://tsatgd.fr",
+      "github": "",
+      "type": "Web"
+    },
+    {
+      "id": "asporta",
+      "title": "Asporta",
+      "date": "2025",
+      "description": "Développement d'un site web dynamique pour l'association ASPORTA connecté à une base de données, avec des utilisateurs ayant des rôles différents et des fonctionnalités de gestion du site via un tableau de bord.",
+      "image": "../images/stage.png",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+      "link": "https://asporta.org",
+      "github": "",
+      "type": "Web"
+    },
+    {
       "id": "gestion-demandes",
       "title": "Gestion de demandes informatiques",
       "date": "2024",
