@@ -104,7 +104,7 @@
       "title": "TSATGD - Tennis Club Tavaux Saint-Aubin Grand Dole",
       "date": "2025",
       "description": "Development of a dynamic website for the Tennis Club Tavaux Saint-Aubin Grand Dole connected to a database, with users having different roles and site management functionalities via a dashboard.",
-      "image": "",
+      "image": "../images/stage_tennis.png",
       "technologies": ["React", "Node.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
       "link": "https://tsatgd.fr",
       "github": "",
