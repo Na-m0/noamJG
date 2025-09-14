@@ -186,7 +186,7 @@
     {
       "id": "letterboxd",
       "title": "Letterboxd",
-      "date": "2024",
+      "date": "2025",
       "description": "Website working like a simplified version of Letterboxd. Users can view a list of movies, mark them as watched, and add reviews.",
       "image": "../images/project6.png",
       "technologies": ["PHP", "Laravel", "MySQL"],

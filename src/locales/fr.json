@@ -183,7 +183,7 @@
     {
       "id": "letterboxd",
       "title": "Letterboxd",
-      "date": "2024",
+      "date": "2025",
       "description": "Site web fonctionnant comme une version simplifiée de Letterboxd. Il est possible de consulter une liste de films, de les ajouter comme vue et d'ajouter des critiques.",
       "image": "../images/project6.png",
       "technologies": ["PHP", "Laravel", "MySQL"],
