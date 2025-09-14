@@ -107,7 +107,7 @@
       "image": "../images/project2.png",
       "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
       "link": "https://noamjg-portfolio.vercel.app",
-      "github": "",
+      "github": "https://github.com/Na-m0/GDI",
       "type": "Web",
       "context": [
         {
