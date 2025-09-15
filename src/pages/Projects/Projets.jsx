@@ -64,7 +64,7 @@ const Projets = () => {
                             />
                         </div>
 
-                        <div className="bg-[#FCFBFF] rounded-[0.5rem] p-6 -mt-6 z-20 relative flex flex-col justify-between grow">
+                        <div className="bg-[#FCFBFF] rounded-[0.5rem] p-4 -mt-6 z-20 relative flex flex-col justify-between grow">
                             <div>
                                 <div className="flex justify-between items-center mb-2">
                                     <h3 className="text-lg font-bold">{project.title}</h3>
@@ -73,8 +73,8 @@ const Projets = () => {
                                 <p className="text-sm mb-4 line-clamp-3">{project.description}</p>
                             </div>
 
-                            <div className="flex flex-wrap items-center justify-between gap-2 mt-auto">
-                                <div className="flex gap-2 flex-wrap">
+                            <div className="flex flex-wrap items-center justify-between gap-4 mt-auto">
+                                <div className="flex gap-1 flex-wrap">
                                     {project.technologies.map((tech, i) => (
                                         <span
                                             key={i}
