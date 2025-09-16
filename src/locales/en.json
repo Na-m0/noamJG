@@ -122,6 +122,17 @@
       "type": "Web"
     },
     {
+      "id": "yoleau",
+      "title": "Yoleau — Water quality analysis application",
+      "date": "2025",
+      "description": "Application allowing to analyze river water to provide precise information about its quality, in particular for amateur swimmers in nature.",
+      "image": "../images/sae.png",
+      "technologies": ["Vue.js", "Node.js", "MongoDB", "IA", "Arduino", "Serveur TCP", "Kotlin"],
+      "link": "",
+      "github": "",
+      "type": "Web"
+    },
+    {
       "id": "gestion-demandes",
       "title": "IT Request Management",
       "date": "2024",
