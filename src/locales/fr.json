@@ -132,6 +132,17 @@
       ]
     },
     {
+      "id": "yoleau",
+      "title": "Yoleau — application d'analyse de rivières",
+      "date": "2024",
+      "description": "Application permettant d'analyser l'eau des rivières afin de fournir des informations précises sur sa qualité, en particulier pour les amateurs de baignade en pleine nature.",
+      "image": "../images/project2.png",
+      "technologies": ["Vue.js", "Node.js", "MongoDB", "IA", "Arduino", "Serveur"],
+      "link": "",
+      "github": "",
+      "type": "Web"
+    },
+    {
       "id": "gestion-demandes",
       "title": "Gestion de demandes informatiques",
       "date": "2024",
