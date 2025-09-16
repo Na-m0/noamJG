@@ -116,17 +116,6 @@
       "technologies": ["React", "Node.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
       "link": "https://asporta.org",
       "github": "",
-      "type": "Web"
-    },
-    {
-      "id": "gestion-demandes",
-      "title": "Gestion de demandes informatiques",
-      "date": "2024",
-      "description": "Application web de gestion de demandes informatiques en vue de la préparation budgétaire de la ville de Montbéliard. Effectué lors de mon stage de deuxième année.",
-      "image": "../images/project2.png",
-      "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
-      "link": "https://noamjg-portfolio.vercel.app/",
-      "github": "https://github.com/Na-m0/GDI",
       "type": "Web",
       "context": [
         {
@@ -141,6 +130,17 @@
           "image": ""
         }
       ]
+    },
+    {
+      "id": "gestion-demandes",
+      "title": "Gestion de demandes informatiques",
+      "date": "2024",
+      "description": "Application web de gestion de demandes informatiques en vue de la préparation budgétaire de la ville de Montbéliard. Effectué lors de mon stage de deuxième année.",
+      "image": "../images/project2.png",
+      "technologies": ["Vue.js", "Node.js", "PostgreSQL"],
+      "link": "https://noamjg-portfolio.vercel.app/",
+      "github": "https://github.com/Na-m0/GDI",
+      "type": "Web"
     },
     {
       "id": "balonu",
