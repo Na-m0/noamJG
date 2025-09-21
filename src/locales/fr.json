@@ -142,8 +142,9 @@
       "github": "",
       "type": "Web",
       "collaborateurs": [
-        { "name": "", "github": "" },
-        { "name": "", "github": "" },
+        { "name": "Théo Viévilles", "github": "" },
+        { "name": "Timon Dubreuil", "github": "" },
+        { "name": "Nunzio Silarbi", "github": "" },
         { "name": "Sefa Tas", "github": "https://github.com/sefats" }
       ]
     },
