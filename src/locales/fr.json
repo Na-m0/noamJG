@@ -140,7 +140,12 @@
       "technologies": ["Vue.js", "Node.js", "MongoDB", "IA", "Arduino", "Serveur TCP", "Kotlin"],
       "link": "",
       "github": "",
-      "type": "Web"
+      "type": "Web",
+      "collaborateurs": [
+        { "name": "", "github": "" },
+        { "name": "", "github": "" },
+        { "name": "Sefa Tas", "github": "https://github.com/sefats" }
+      ]
     },
     {
       "id": "gestion-demandes",
