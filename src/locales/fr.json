@@ -280,6 +280,7 @@
 
 
 
+
   "footer": {
     "navigation": "Navigation",
     "home": "Accueil",
@@ -331,7 +332,7 @@
     "about_experience": [
       {
         "period": "Mars - Mai 2025",
-        "position": "Stage en développement web full stack — Association ASPORTA",
+        "position": "Stage en développement web full stack - Association ASPORTA",
         "location": "Dole",
         "description": "Développement de deux sites web full stack",
         "links": [
@@ -340,8 +341,17 @@
         ]
       },
       {
+        "period": "Mars 2025",
+        "position": "Freelance Développement web full stack - Agence immobilière Marli",
+        "location": "Télétravail",
+        "description": "Migration et développement d'un dashboard pour une agence immobiliaire",
+        "links": [
+          { "label": "Site web de l'agence immobilière", "url": "https://marli-immobilier.com" }
+        ]
+      },
+      {
         "period": "Avril - Juin 2024",
-        "position": "Stage en développement application web — Mairie de Montbéliard",
+        "position": "Stage en développement application web - Mairie de Montbéliard",
         "location": "Montbéliard",
         "description": "Développement d'une application web de gestion de demande informatique pour la mairie de Montbéliard",
         "link": { "label": "Voir plus →", "url": "https://noamjg-portfolio.vercel.app/" }
