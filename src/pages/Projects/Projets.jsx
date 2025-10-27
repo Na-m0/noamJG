@@ -57,11 +57,13 @@ const Projets = () => {
                         className="w-full md:w-[48%] max-w-[570px] h-[400px] mx-auto relative flex flex-col"
                     >
                         <div className="relative z-10">
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="rounded-[0.5rem] w-full h-full max-h-[230px]"
-                            />
+                            <Link to={`/projects/${project.id}`} className="relative z-10">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="rounded-[0.5rem] w-full h-full max-h-[230px] cursor-pointer hover:opacity-90 transition"
+                                />
+                            </Link>
                         </div>
 
                         <div className="bg-[#FCFBFF] rounded-[0.5rem] p-4 -mt-6 z-20 relative flex flex-col justify-between grow">

@@ -17,8 +17,6 @@ const Footer = () => {
   return (
     <footer className="text-white pt-12 pb-6 px-6 md:px-20" style={{ backgroundImage: `url(${fondFooter})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       <div className="flex gap-4 text-[#444444] flex justify-center mb-8">
-        <a href="https://www.instagram.com/nam0_jg" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-[30px] hover:text-gray-400 transition" /></a>
-        <a href="https://x.com/NGirods" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter className="text-[30px] hover:text-gray-400 transition" /></a>
         <a href="https://www.linkedin.com/in/noam-joly-girods-3a27b62a4/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-[30px] hover:text-gray-400 transition" /></a>
       </div>
 
@@ -44,11 +42,6 @@ const Footer = () => {
             <li>
               <a href="mailto:noamjoly2812@gmail.com" className="hover:text-gray-400 transition">
                 <IoMdMail className="inline mr-2" />noamjoly2812@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+33613593945" className="hover:text-gray-400 transition">
-                <BsFillTelephoneFill className="inline mr-2" />+33 6 13 59 39 45
               </a>
             </li>
             <li className="text-[#444444]">

@@ -39,36 +39,6 @@ const Contact = () => {
         <div className="bg-[#EDE8FF] w-[50%] h-[10px] rounded-[2px]"></div>
       </div>
 
-      {/* Contenu */}
-      <div className="relative z-10 grid md:grid-cols-2 gap-12">
-        {/* Infos perso */}
-        <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">{t("contact.title")}</h2>
-          <p>
-            <strong>{t("contact.nom")} :</strong> Joly-Girods
-          </p>
-          <p>
-            <strong>{t("contact.prenom")} :</strong> Noam
-          </p>
-          <p>
-            <strong>Email :</strong>{" "}
-            <a
-              className="underline hover:text-[#888]"
-              href="mailto:noam@example.com"
-            >
-              noamjoly2812@gmail.com
-            </a>
-          </p>
-          <p>
-            <strong>{t("contact.tel")} :</strong>{" "}
-            <a
-              className="underline hover:text-[#888]"
-              href="tel:+33613593945"
-            >
-              +33 6 13 59 39 45
-            </a>
-          </p>
-        </div>
 
         {/* Formulaire */}
         <form
@@ -136,7 +106,6 @@ const Contact = () => {
           {error && <p className="text-red-600">{error}</p>}
         </form>
       </div>
-    </div>
   );
 };
 
